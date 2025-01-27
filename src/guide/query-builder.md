@@ -51,7 +51,7 @@ interface User {
 }
 
 knex('users')
-  .where('id')
+  .where('id',1)
   .first(); // Resolves to any
 
 knex<User>('users') // User is the type of row in database
